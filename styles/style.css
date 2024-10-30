@@ -21,4 +21,8 @@
   color: var(--accent-color);
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-image: var(--bg-gradient);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
