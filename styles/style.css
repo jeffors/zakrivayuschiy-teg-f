@@ -135,6 +135,25 @@
   cursor: pointer;
 }
 
-.button__text {
-  
+.button {
+  background-color: var(--bg-color);
+  border: 2px solid var(--accent-color);
+  cursor: pointer;
+  padding: 15.5px 20px;
+  font-family: var(--accent-font);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.floppy {
+  block-size: 21px;
+  inline-size: 21px;
 }
