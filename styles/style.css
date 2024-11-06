@@ -106,7 +106,7 @@
 
 .section__description {
   line-height: 1.16;
-  padding: 23.5px 25px;
+  padding: 23px 25px;
   display: flex;
   flex-direction: column;
   gap: 27px;
@@ -172,5 +172,9 @@
   .floppy {
     block-size: 28px;
     inline-size: 28px;
+  }
+
+  .section__description {
+    padding: 23px 25px 23.5px 25px;
   }
 }
