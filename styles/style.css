@@ -43,7 +43,7 @@
   flex-direction: column;
   align-items: center;
   padding-inline: clamp(14px, 80%, 120.5px);
-  padding-block-start: clamp(120px, 80%, 136px);
+  padding-block-start: 136px;
   padding-block-end: 25px;
   gap: 25px;
   text-transform: uppercase;
@@ -95,7 +95,8 @@
 .section__heading {
   font-size: 18px;
   font-variation-settings: "wght" var(--heading-weight);
-  padding: 7px 10px;
+  padding: 5px 10px 5px 10px;
+  line-height: 1.21;
 }
 
 .section__image {
@@ -105,7 +106,7 @@
 
 .section__description {
   line-height: 1.16;
-  padding: 23px 25px;
+  padding: 23.5px 25px;
   display: flex;
   flex-direction: column;
   gap: 27px;
@@ -156,4 +157,20 @@
 .floppy {
   block-size: 21px;
   inline-size: 21px;
+}
+
+@media (width <= 375px) {
+  .header {
+    padding-block-start: 120px;
+  }
+
+  .button {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .floppy {
+    block-size: 28px;
+    inline-size: 28px;
+  }
 }
