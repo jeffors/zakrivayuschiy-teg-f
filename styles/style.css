@@ -79,6 +79,34 @@
   border: none;
   text-transform: uppercase;
   cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.theme-menu__button::after {
+  content: "";
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.theme-menu__button:focus-visible::after {
+  content: "";
+  position: absolute;
+  inline-size: calc(100% - 10px);
+  inset-block-end: -1px;
+  inset-inline-start: 5px;
+  block-size: 2px;
+  transform: scaleX(1);
+  background-color: var(--accent-color);
 }
 
 .theme-menu__button:disabled {
