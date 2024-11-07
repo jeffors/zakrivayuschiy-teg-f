@@ -99,6 +99,30 @@
   line-height: 1.21;
 }
 
+.section__label {
+  position: relative;
+}
+
+.label-text {
+  position: absolute;
+  color: black;
+  inset-inline-end: 25px;
+  inset-block-start: 26px;
+  font-size: 14px;
+  font-family: var(--accent-font), sans-serif;
+  text-shadow: -1px 0 var(--bg-color), 0 1px var(--bg-color), 1px 0 var(--bg-color), 0 -1px var(--bg-color);
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+}
+
+@supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
+  .label-text {
+    -webkit-text-stroke: 1px var(--bg-color);
+    text-stroke: 1px var(--bg-color);
+    text-shadow: none;
+  }
+}
+
 .section__image {
   inline-size: 100%;
   border-block: 2px solid var(--accent-color);
@@ -176,5 +200,10 @@
 
   .section__description {
     padding: 23px 25px 23.5px 25px;
+  }
+
+  .label-text {
+    inset-inline-end: 12px;
+    inset-block-start: 23px;
   }
 }
