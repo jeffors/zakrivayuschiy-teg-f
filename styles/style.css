@@ -105,7 +105,7 @@
 
 .label-text {
   position: absolute;
-  color: black;
+  color: var(--accent-color);
   inset-inline-end: 25px;
   inset-block-start: 26px;
   font-size: 14px;
