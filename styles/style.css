@@ -118,6 +118,7 @@
   position: absolute;
   content: "▶";
   margin-inline-start: -20px;
+  animation: arrow 0.5s ease-in-out alternate infinite;
 }
 
 .section__heading {
@@ -233,5 +234,14 @@
   .label-text {
     inset-inline-end: 12px;
     inset-block-start: 23px;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    margin-inline-start: -20px;
+  }
+  100% {
+    margin-inline-start: -24px;
   }
 }
