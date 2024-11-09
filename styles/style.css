@@ -94,8 +94,9 @@
 .theme-menu__button::after {
   content: "";
   transform: scaleX(0);
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease-in-out;
   transform-origin: left;
+  opacity: 0;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -118,9 +119,8 @@
   position: absolute;
   content: "▶";
   margin-inline-start: -20px;
-  animation: arrow 0.5s ease-in-out
-   alternate infinite;
-   opacity: 0.6;
+  animation: arrow 0.5s ease-in-out alternate infinite;
+  opacity: 0.6;
 }
 
 .section__heading {
@@ -141,7 +141,8 @@
   inset-block-start: 26px;
   font-size: 14px;
   font-family: var(--accent-font), sans-serif;
-  text-shadow: -1px 0 var(--bg-color), 0 1px var(--bg-color), 1px 0 var(--bg-color), 0 -1px var(--bg-color);
+  text-shadow: -1px 0 var(--bg-color), 0 1px var(--bg-color),
+    1px 0 var(--bg-color), 0 -1px var(--bg-color);
   mix-blend-mode: hard-light;
   opacity: 0.5;
 }
@@ -230,7 +231,7 @@
   }
 
   .section__description {
-    padding: 23px 25px 23.5px 25px;
+    padding: 23px 25px 24px 25px;
   }
 
   .label-text {
