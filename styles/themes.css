@@ -9,6 +9,7 @@
   --heading-weight: 700;
   --bg-color: #fff;
   --accent-color: #000;
+  --button-text-color: #fff;
   --bg-gradient: repeating-linear-gradient(
       #d3d3d3,
       #d3d3d3 2px,
@@ -30,6 +31,7 @@
   --heading-weight: 785;
   --bg-color: #000;
   --accent-color: #00cc14;
+  --button-text-color: #00cc14;
   --bg-gradient: repeating-linear-gradient(
       #000,
       #000 2px,
@@ -52,6 +54,7 @@
     --heading-weight: 785;
     --bg-color: #000;
     --accent-color: #00cc14;
+    --button-text-color: #00cc14;
     --bg-gradient: repeating-linear-gradient(
         #000,
         #000 2px,
