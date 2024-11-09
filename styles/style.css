@@ -42,7 +42,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-inline: clamp(14px, 80%, 120.5px);
+  /* padding-inline: clamp(14px, 80%, 120.5px); */
   padding-block-start: 136px;
   padding-block-end: 25px;
   gap: 25px;
@@ -118,7 +118,9 @@
   position: absolute;
   content: "▶";
   margin-inline-start: -20px;
-  animation: arrow 0.5s ease-in-out alternate infinite;
+  animation: arrow 0.5s ease-in-out
+   alternate infinite;
+   opacity: 0.6;
 }
 
 .section__heading {
