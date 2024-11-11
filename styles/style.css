@@ -206,6 +206,7 @@
   gap: 8px;
   transition: box-shadow 0.3s ease;
   position: relative;
+  justify-content: center;
 }
 
 .button:focus {
@@ -249,7 +250,6 @@
   align-self: baseline;
   inline-size: 130px;
   block-size: 39px;
-  justify-content: center;
 }
 
 .footer {
@@ -326,6 +326,44 @@
 
 .like-icon.is-liked .sparks {
   animation: sparks 0.3s ease-in 0.3s;
+}
+
+.dialog {
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+  padding: 30px;
+  inline-size: 353px;
+  font-size: 14px;
+}
+
+.dialog .button {
+  inline-size: 100%;
+  text-transform: uppercase;
+}
+
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.dialog__info {
+  display: flex;
+  gap: 20px;
+}
+
+.dialog__info .floppy {
+  min-block-size: 39px;
+  min-inline-size: 39px;
+}
+
+.dialog__label {
+  font-family: var(--accent-font);
+  text-transform: uppercase;
 }
 
 @media (width <= 375px) {

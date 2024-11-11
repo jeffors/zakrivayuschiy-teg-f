@@ -525,11 +525,13 @@
         <span class="button__text">Сохранить на память</span>
       </button>
     </footer>
-    <dialog id="save-dialog">
-      <svg class="floppy" viewBox="0 0 21 21">
-        <use href="images/floppy.svg#floppy"></use>
-      </svg>
-      <p class="dialog__label">Вставьте дискету, чтобы продолжить</p>
+    <dialog class="dialog" id="save-dialog">
+      <div class="dialog__info">
+        <svg class="floppy" viewBox="0 0 21 21">
+          <use href="images/floppy.svg#floppy"></use>
+        </svg>
+        <p class="dialog__label">Вставьте дискету,&nbsp;чтобы продолжить</p>
+      </div>
       <form method="dialog">
         <button class="button">
           <span class="button__text">Ok</span>
