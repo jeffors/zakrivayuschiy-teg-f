@@ -390,6 +390,14 @@
   filter: invert(1) brightness(200%) saturate(60%) hue-rotate(90deg);
 }
 
+.sepia {
+  filter: sepia(50%);
+}
+
+.hue-rotate {
+  filter: hue-rotate(-90deg);
+}
+
 @media (width <= 375px) {
   .header {
     padding-block-start: 120px;
