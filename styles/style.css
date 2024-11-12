@@ -366,6 +366,30 @@
   text-transform: uppercase;
 }
 
+.brightness {
+  filter: brightness(200%);
+}
+
+.contrast {
+  filter: contrast(20%);
+}
+
+.invert {
+  filter: invert(0.7);
+}
+
+.grayscale {
+  filter: grayscale(0.8);
+}
+
+.saturate {
+  filter: saturate(158%);
+}
+
+.multifilter {
+  filter: invert(1) brightness(200%) saturate(60%) hue-rotate(90deg);
+}
+
 @media (width <= 375px) {
   .header {
     padding-block-start: 120px;
