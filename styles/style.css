@@ -42,7 +42,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding-inline: clamp(14px, 80%, 120.5px); */
   padding-block-start: 136px;
   padding-block-end: 25px;
   gap: 25px;
@@ -193,6 +192,12 @@
   border: 2px solid var(--accent-color);
 }
 
+.card__like-button {
+  align-self: baseline;
+  inline-size: 130px;
+  block-size: 39px;
+}
+
 .button {
   background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
@@ -238,17 +243,6 @@
   position: relative;
   mix-blend-mode: difference;
   z-index: 1;
-}
-
-.card__like-button {
-  background-color: transparent;
-  border: 2px solid var(--accent-color);
-  cursor: pointer;
-  font-family: var(--accent-font);
-  font-size: 14px;
-  align-self: baseline;
-  inline-size: 130px;
-  block-size: 39px;
 }
 
 .footer {
@@ -334,11 +328,13 @@
   padding: 30px;
   inline-size: 353px;
   font-size: 14px;
+  line-height: 1.5;
 }
 
 .dialog .button {
   inline-size: 100%;
   text-transform: uppercase;
+  padding-block: 12.5px;
 }
 
 .dialog[open] {
@@ -354,6 +350,7 @@
 .dialog__info {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .dialog__info .floppy {
