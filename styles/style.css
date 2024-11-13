@@ -143,6 +143,7 @@
     1px 0 var(--bg-color), 0 -1px var(--bg-color);
   mix-blend-mode: hard-light;
   opacity: 0.5;
+  z-index: 1;
 }
 
 @supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
