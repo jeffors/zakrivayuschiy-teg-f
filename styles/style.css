@@ -254,6 +254,7 @@
 .footer {
   display: flex;
   justify-content: center;
+  padding-block-end: 100px;
 }
 
 .floppy {
