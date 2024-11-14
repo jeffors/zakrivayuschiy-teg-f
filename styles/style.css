@@ -265,9 +265,8 @@
   opacity: 0;
 }
 
-.main-body {
-  transition: fill 0.3s linear;
-  fill: transparent;
+.save-button {
+  margin: 0 auto 50px;
 }
 
 .dialog {
