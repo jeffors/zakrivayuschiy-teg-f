@@ -126,6 +126,7 @@
   font-variation-settings: "wght" var(--heading-weight);
   padding: 5px 10px 5px 10px;
   line-height: 1.21;
+  border-block-end: 2px solid var(--accent-color);
 }
 
 .card__label {
@@ -155,11 +156,12 @@
 }
 
 .card__image {
+  display: block;
   inline-size: 100%;
-  border-block: 2px solid var(--accent-color);
 }
 
 .card__description {
+  border-block-start: 2px solid var(--accent-color);
   line-height: 1.16;
   padding: 23px 25px;
   display: flex;
